@@ -1,14 +1,14 @@
 {
   "name": "SR_PLANT",
   "short_name": "SR_PLANT",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#f2f2f7",
   "theme_color": "#007aff",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://i.postimg.cc/G3SYVTYx/sr.png",
+      "src": "https://i.postimg.cc/tCBxWZRW/sr-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
