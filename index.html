@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>SR_PLANT</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://i.postimg.cc/jjfHKxHF/SR.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/jjfHKxHF/SR.png">
+    <meta name="theme-color" content="#f2f2f7">
+    <style>
+        body, html { 
+            margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f2f2f7; 
+        }
+        iframe { 
+            width: 100%; height: 100%; border: none; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Iframe ini memanggil aplikasi Google Apps Script Anda -->
+    <iframe src="https://script.google.com/macros/s/AKfycbwbAZ3qp_xs2Qxtd8bHuJQG26UDrcklCJB5K8aFfecNOgHh14WAJgTuvAhHj69EjtBN/exec" allow="camera; microphone; geolocation"></iframe>
+    
+    <script>
+        // Mendaftarkan Service Worker untuk syarat PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                console.log('ServiceWorker registration successful');
+            }).catch(function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
